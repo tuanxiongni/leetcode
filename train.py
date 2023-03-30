@@ -90,5 +90,8 @@ inse(list1,list2)
 
 def gernum():
     return list(range(5,50))
+a = {'Alice':20,'Beth':18,'Cecil':21}
+print(list(a))
+
 
 
