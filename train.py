@@ -47,3 +47,48 @@ def sor(list):
     return list.sort(),list.sort(reverse=True)
 sortnum=[3,0,4,1,2,5,4,6]
 print(sor(sortnum))
+
+def medium(list):
+    for i in range(0,len(list)):
+        if list[i]>5:
+            list[i]=1
+        else:
+            list[i]=0
+    return list
+a=[1,2,3,4,5,6,7,8,9]
+print(medium(a))
+def everyelement(list):
+    for i in list:
+        print(i)
+        print(list.index(i))
+a=['x','y','z']
+everyelement(a)
+
+def jishu_oushu(list):
+    jishu=[]
+    oushu=[]
+    for i in list:
+        if i%2==0:
+            oushu.append(i)
+        else:
+            jishu.append(i)
+    return jishu,oushu
+a=[1,2,3,4,5,6,7,8,9,10]
+print(jishu_oushu(a))
+a=[[6,5],[3,7],[2,8]]
+print(a)
+b=sorted(a,key=(lambda  x:x[0]))
+print(b)
+c=sorted(a,key=lambda x:x[-1])
+print(c)
+
+def inse(list1,list2):
+    print(list1.insert(3,list2))
+list1=[1,4,7,2,5,8]
+list2=['x','y','z']
+inse(list1,list2)
+
+def gernum():
+    return list(range(5,50))
+
+
