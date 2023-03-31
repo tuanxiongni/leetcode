@@ -91,7 +91,17 @@ inse(list1,list2)
 def gernum():
     return list(range(5,50))
 a = {'Alice':20,'Beth':18,'Cecil':21}
-print(list(a))
+#print(list(a))
+#b=list(a.values())
+print(b)
 
+c={'Alice':20,'Beth':18,'Cecil':21}
+print(c)
+for i ,j in c.items():
+    print(i,j)
 
-
+a = ['A','B','C','D','E','F','G','H']
+b = {}
+for i in a:
+    b[i] = 0
+print(b)
